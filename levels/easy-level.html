@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Easy Level - JS Blocky Code</title>
+   <!-- Link to shared stylesheet -->
+  <link rel="stylesheet" href="../style.css" />
+
+ 
+
+</head>
+<body>
+    <!-- Header Section -->
+  <header>
+    <h1>🟢 Easy Challenge: Declare and Print a Variable</h1>
+  </header>
+    <!-- Main Challenge Container -->
+  <main class="challenge-container">
+        <!-- Instruction Text -->
+    <p class="challenge-instruction">
+      Drag the correct blocks to the two boxes below to declare a variable and print it to the console.
+    </p>
+        <!-- Drop Zone for Answers -->
+    <div id="drop-zone">
+          <!-- Step 1 Slot -->
+      <div class="drop-container">
+        <span class="drop-label">Step 1</span>
+        <div class="drop-slot" data-slot="1"></div>
+      </div>
+         <!-- Step 2 Slot -->
+      <div class="drop-container">
+        <span class="drop-label">Step 2</span>
+        <div class="drop-slot" data-slot="2"></div>
+      </div>
+    </div>
+    
+    <!-- Code Block Choices for Dragging -->
+    <div id="code-blocks">
+      <div class="code-draggable" data-code="let name = 'John';">let name = 'John';</div>
+      <div class="code-draggable" data-code="console.log(name);">console.log(name);</div>
+      <div class="code-draggable" data-code="console.log();">console.log();</div>
+      <div class="code-draggable" data-code="name = 'John';">name = 'John';</div>
+    </div>
+    
+    <!-- Code Block Choices for Dragging -->
+    <button id="check-btn"> Check</button>
+     <!-- Feedback Area (optional use) -->
+    <p id="feedback"></p>
+     <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+      <a href="../levels.html" class="quit">⬅ Quit to Level Menu</a>
+      <a href="medium-level.html" id="next-btn" style="display:none;">Next Level </a>
+    </div>
+     <!-- Dialog shown when the answer is correct -->
+    <div id="levelCompleteDialog" title=" Level Complete!" style="display:none;">
+      <p>Great job! You've solved this challenge successfully. Ready for the next one?</p>
+    </div>
+        <!-- Dialog shown when the answer is incorrect -->
+    <div id="tryAgainDialog" title="Oops!" >
+      <p>❌ Try again! Please check your code blocks.</p>
+    </div>
+    
+   
+  </main>
+  <!-- JavaScript and jQuery UI for interactivity -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script src="../script.js" defer></script>
+</body>
+</html>
